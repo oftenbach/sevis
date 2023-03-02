@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SEVISBatchCreateUpdateStudent xsi:noNamespaceSchemaLocation="http://www.ice.gov/xmlschema/sevisbatch/Create-UpdateStudent.xsd" userID="PDSOSEVISusername"
+	xmlns:common="Common"
+	xmlns:table="Table"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<BatchHeader>
+		<BatchID>20230123456789</BatchID>
+		<OrgID>SNA214X00000000</OrgID>
+	</BatchHeader>
+	<UpdateStudent>
+<!--
+Copy the generated XML code blocks from XMLGenerator.xlsx and paste between the UpdateStudent open and closing tags (i.e., between lns 11 and 29). 
+-->
+		<Student sevisID="N0123456789" requestID="001" userID="DSOusername">
+			<UserDefinedA>0000111111</UserDefinedA>
+			<UserDefinedB>00000000exid11</UserDefinedB>
+			<Program>
+<!--
+  Change the value below to 'false' if you do not wish to have a new I-20 created for your shortened SEVIS records.
+ -->
+                <Shorten printForm="true">
+<!--
+  Change the date below using the format shown; modify Remarks to your liking or leave blank.
+ -->
+				<NewPrgEndDate>2023-12-31</NewPrgEndDate>
+				<Remarks>Program end date shortened to reflect updated university graduation date for specified term.</Remarks>
+			    </Shorten>
+		    </Program>
+	</Student>
+</UpdateStudent>
+</SEVISBatchCreateUpdateStudent>
